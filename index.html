@@ -240,27 +240,12 @@
                 <div class="col-md-6">
                     <form>
                         <form action="https://formspree.io/f/mwpbdwyb" method="POST">
-                         <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" name="nombre" id="nombre" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" name="email" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="mensaje" class="form-label">Mensaje</label>
-                            <textarea class="form-control" name="message" id="mensaje" rows="4" required></textarea>
-                        </div>
-                        <!-- Campo oculto opcional para evitar spam -->
-                        <input type="text" name="_gotcha" style="display:none">
-    
-                        <!-- Redirección opcional tras envío exitoso -->
+                        <input type="text" name="nombre" placeholder="Tu nombre" required>
+                        <input type="email" name="email" placeholder="Tu correo" required>
+                        <textarea name="message" placeholder="Tu mensaje..." required></textarea>
                         <input type="hidden" name="_next" value="gracias.html">
-
-                        <button type="submit" class="btn btn-danger w-100">Enviar</button>
+                        <button type="submit">Enviar</button>
                     </form>
-
                 </div>
             </div>
         </div>
